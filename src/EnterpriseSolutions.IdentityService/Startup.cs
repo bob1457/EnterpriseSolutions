@@ -73,6 +73,17 @@ namespace EnterpriseSolutions.IdentityService
                 throw new Exception("need to configure key material");
             }
 
+            services.AddCors(setup =>
+            {
+                setup.AddDefaultPolicy(policy =>
+                {
+                    policy.AllowAnyHeader();
+                    policy.AllowAnyMethod();
+                    policy.WithOrigins("http://localhost:4200", "http://localhost:8080");
+                    policy.AllowCredentials();
+                });
+            });
+
             services.AddControllers();
 
             //services.AddTransient<IProfileService, IdentityClaimsProfileService>();
@@ -89,6 +100,8 @@ namespace EnterpriseSolutions.IdentityService
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors();
 
             app.UseRouting();
 
