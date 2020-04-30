@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterpriseSolutions.IdentityService", "EnterpriseSolutions.IdentityService\EnterpriseSolutions.IdentityService.csproj", "{28EB2C53-4FE7-4EED-BB1B-8E690A0A046C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityAuthentication", "IdentityAuthentication", "{DAC578C7-04F9-40CE-8047-B7DCF4A45678}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28EB2C53-4FE7-4EED-BB1B-8E690A0A046C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28EB2C53-4FE7-4EED-BB1B-8E690A0A046C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28EB2C53-4FE7-4EED-BB1B-8E690A0A046C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28EB2C53-4FE7-4EED-BB1B-8E690A0A046C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{28EB2C53-4FE7-4EED-BB1B-8E690A0A046C} = {DAC578C7-04F9-40CE-8047-B7DCF4A45678}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F135422B-44D8-45A5-AEB2-84C7D49FB17F}
+	EndGlobalSection
+EndGlobal
