@@ -45,7 +45,7 @@ namespace EnterpriseSolutions.IdentityService
         {
             AddDbContext(services);
 
-            services.AddIdentity<AppUser, IdentityRole>()
+            services.AddIdentity<AppUser, AppRole>()
             .AddEntityFrameworkStores<AppIdentityDbContext>();
 
             var builder = services.AddIdentityServer()
