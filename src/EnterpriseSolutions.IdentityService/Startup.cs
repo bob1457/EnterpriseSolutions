@@ -58,6 +58,7 @@ namespace EnterpriseSolutions.IdentityService
                   options.TokenCleanupInterval = 30; // interval in seconds
               })
               //.AddInMemoryPersistedGrants()
+              //.AddDeveloperSigningCredential()
               .AddInMemoryIdentityResources(Config.GetIdentityResources())
               .AddInMemoryApiResources(Config.GetApiResources())
               //.AddInMemoryClients(Config.GetClients(Configuration.GetValue("AppSettings:Address", "")))
@@ -98,6 +99,8 @@ namespace EnterpriseSolutions.IdentityService
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseStaticFiles();
 
             app.UseHttpsRedirection();
 

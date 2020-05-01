@@ -29,7 +29,7 @@ namespace EnterpriseSolutions.IdentityService
             };
         }
 
-        public static IEnumerable<Client> GetClients(string devHost = "")
+        public static IEnumerable<Client> GetClients(string devHost = "localhost")
         {
             return new[]
             {
@@ -41,7 +41,8 @@ namespace EnterpriseSolutions.IdentityService
                     RequirePkce = true,
                     RequireClientSecret = false,
                     AllowedScopes = { "openid", "profile", "email", "api.read" },
-                    RedirectUris = {$"http://{devHost}/test-client/callback.html"}, // test client runs on same host
+                    AllowAccessTokensViaBrowser = true,
+                    RedirectUris = {$"https://localhost:5001/test-client/callback.html"}, // test client runs on same host
                     AllowedCorsOrigins = {$"http://{devHost}" }, // test client runs on same host
                     AccessTokenLifetime = (int)TimeSpan.FromMinutes(120).TotalSeconds
                 },

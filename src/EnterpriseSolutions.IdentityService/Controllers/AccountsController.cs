@@ -130,6 +130,7 @@ namespace EnterpriseSolutions.IdentityService.Controllers
                 RememberLogin = model.RememberLogin
             };
             return Ok(vm); ;
+
         }
 
 
